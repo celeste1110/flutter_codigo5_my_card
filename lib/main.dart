@@ -23,7 +23,7 @@ class MandarinaApp extends StatelessWidget {
             ),
             //Image.asset('assets/images/persona1.jpg'),
             Text(
-              'Celeste Acosta',
+              'Jasmin Acosta',
               style: TextStyle(
                 color:Colors.white ,
                 fontSize: 22.0,
