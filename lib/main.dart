@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MandarinaApp());
 }
-
+const String nombre="Luis";
 class MandarinaApp extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,7 +14,7 @@ class MandarinaApp extends StatelessWidget {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(
+          const  CircleAvatar(
               radius: 56.0,
               //backgroundImage: NetworkImage(
               //  'https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
@@ -22,7 +23,7 @@ class MandarinaApp extends StatelessWidget {
               ),
             ),
             //Image.asset('assets/images/persona1.jpg'),
-            Text(
+            const Text(
               'Jasmin Acosta',
               style: TextStyle(
                 color:Colors.white ,
@@ -30,10 +31,10 @@ class MandarinaApp extends StatelessWidget {
                 fontFamily: 'Ppppins Medium',
               ),
             ),
-            SizedBox(
+           const SizedBox(
               height: 4.0,
             ),
-            Text(
+           const Text(
               'FLUTTER DEVELOPER',
               style: TextStyle(
                 color:Colors.white60 ,
@@ -41,7 +42,7 @@ class MandarinaApp extends StatelessWidget {
 
               ),
             ),
-            SizedBox(
+           const SizedBox(
               width: 120,
               child: Divider(
                 thickness: 0.3,
@@ -50,7 +51,7 @@ class MandarinaApp extends StatelessWidget {
                 //endIndent: 50.0,
               ),
             ),
-            Card(
+           const  Card(
               color: Colors.white,
               margin: EdgeInsets.symmetric(horizontal: 16.0),
               elevation: 3,
@@ -67,10 +68,10 @@ class MandarinaApp extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+           const SizedBox(
               height: 10.0,
             ),
-            Card(
+           const Card(
               color: Colors.white,
               margin: EdgeInsets.symmetric(horizontal: 16.0),
               elevation: 3,
@@ -84,24 +85,25 @@ class MandarinaApp extends StatelessWidget {
 
               ),
             ),
-            SizedBox(
+           const SizedBox(
               height: 20.0,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
 
-              children: [
+              children: const [
                 Icon(Icons.facebook, color: Colors.white,size: 30,),
-                SizedBox(
+               SizedBox(
                   width: 10.0,
                 ),
                 Icon(Icons.linked_camera_outlined, color: Colors.white,size: 30,),
-                SizedBox(
+              SizedBox(
                   width: 10.0,
                 ),
                 Icon(Icons.email_outlined, color: Colors.white,size: 30,),
               ],
             ),
+            const Text(nombre),
 
 
 
