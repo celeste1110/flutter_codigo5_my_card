@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MandarinaApp());
 }
-const String nombre="Luis";
+
 class MandarinaApp extends StatelessWidget {
 
   @override
@@ -88,22 +88,45 @@ class MandarinaApp extends StatelessWidget {
            const SizedBox(
               height: 20.0,
             ),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.center,
+            //
+            //   children: const [
+            //     Icon(Icons.facebook, color: Colors.white,size: 30,),
+            //    SizedBox(
+            //       width: 10.0,
+            //     ),
+            //     Icon(Icons.linked_camera_outlined, color: Colors.white,size: 30,),
+            //   SizedBox(
+            //       width: 10.0,
+            //     ),
+            //     Icon(Icons.email_outlined, color: Colors.white,size: 30,),
+            //   ],
+            // ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-
-              children: const [
-                Icon(Icons.facebook, color: Colors.white,size: 30,),
-               SizedBox(
-                  width: 10.0,
+              children: [
+                Image.asset(
+                  'assets/images/facebook.png',
+                  height: 50.0,
                 ),
-                Icon(Icons.linked_camera_outlined, color: Colors.white,size: 30,),
-              SizedBox(
-                  width: 10.0,
+                const SizedBox(
+                  width: 30.0,
                 ),
-                Icon(Icons.email_outlined, color: Colors.white,size: 30,),
+                Image.asset(
+                  'assets/images/twitter.png',
+                  height: 50.0,
+                ),
+                const SizedBox(
+                  width: 30.0,
+                ),
+                Image.asset(
+                  'assets/images/instagram.png',
+                  height: 50.0,
+                ),
               ],
             ),
-            const Text(nombre),
+
 
 
 
